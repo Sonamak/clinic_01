@@ -1,0 +1,771 @@
+<!DOCTYPE html> 
+<html lang="en">
+	<head>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+		<title>Doccure - Optometry</title>
+		
+		<!-- Favicons -->
+		<link type="image/x-icon" href="assets/img/favicon.png" rel="icon">
+		
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="assets/css/bootstrap.rtl.min.css">
+		
+		<!-- Fontawesome CSS -->
+		<link rel="stylesheet" href="assets/plugins/fontawesome/css/fontawesome.min.css">
+		<link rel="stylesheet" href="assets/plugins/fontawesome/css/all.min.css">
+		
+        <!-- Main CSS -->
+		<link rel="stylesheet" href="assets/css/style.css">
+	
+	</head>
+	<body>
+
+		<!-- Main Wrapper -->
+		<div class="main-wrapper">
+		
+			<!-- Header -->
+			<header class="header">
+				<nav class="navbar navbar-expand-lg header-nav">
+					<div class="navbar-header">
+						<a id="mobile_btn" href="javascript:void(0);">
+							<span class="bar-icon">
+								<span></span>
+								<span></span>
+								<span></span>
+							</span>
+						</a>
+						<a href="index.html" class="navbar-brand logo">
+							<img src="assets/img/logo.png" class="img-fluid" alt="Logo">
+						</a>
+					</div>
+					<div class="main-menu-wrapper ms-auto">
+						<div class="menu-header">
+							<a href="index.html" class="menu-logo">
+								<img src="assets/img/logo.png" class="img-fluid" alt="Logo">
+							</a>
+							<a id="menu_close" class="menu-close" href="javascript:void(0);">
+								<i class="fas fa-times"></i>
+							</a>
+						</div>
+						<ul class="main-nav">
+							<li class="active">
+								<a href="index.html">Home</a>
+							</li>
+							<li class="has-submenu">
+								<a href="">Doctors <i class="fas fa-chevron-down"></i></a>
+								<ul class="submenu">
+									<li><a href="doctor-dashboard.html">Doctor Dashboard</a></li>
+									<li><a href="appointments.html">Appointments</a></li>
+									<li><a href="schedule-timings.html">Schedule Timing</a></li>
+									<li><a href="my-patients.html">Patients List</a></li>
+									<li><a href="patient-profile.html">Patients Profile</a></li>
+									<li><a href="chat-doctor.html">Chat</a></li>
+									<li><a href="invoices.html">Invoices</a></li>
+									<li><a href="doctor-profile-settings.html">Profile Settings</a></li>
+									<li><a href="reviews.html">Reviews</a></li>
+									<li><a href="doctor-register.html">Doctor Register</a></li>
+								</ul>
+							</li>	
+							<li class="has-submenu">
+								<a href="">Patients <i class="fas fa-chevron-down"></i></a>
+								<ul class="submenu">
+									<li class="has-submenu">
+										<a href="#">Doctors</a>
+										<ul class="submenu">
+											<li><a href="map-grid.html">Map Grid</a></li>
+											<li><a href="map-list.html">Map List</a></li>
+										</ul>
+									</li>
+									<li><a href="search.html">Search Doctor</a></li>
+									<li><a href="doctor-profile.html">Doctor Profile</a></li>
+									<li><a href="booking.html">Booking</a></li>
+									<li><a href="checkout.html">Checkout</a></li>
+									<li><a href="booking-success.html">Booking Success</a></li>
+									<li><a href="patient-dashboard.html">Patient Dashboard</a></li>
+									<li><a href="favourites.html">Favourites</a></li>
+									<li><a href="chat.html">Chat</a></li>
+									<li><a href="profile-settings.html">Profile Settings</a></li>
+									<li><a href="change-password.html">Change Password</a></li>
+								</ul>
+							</li>	
+							<li class="has-submenu">
+								<a href="">Pages <i class="fas fa-chevron-down"></i></a>
+								<ul class="submenu">
+									<li><a href="voice-call.html">Voice Call</a></li>
+									<li><a href="video-call.html">Video Call</a></li>
+									<li><a href="search.html">Search Doctors</a></li>
+									<li><a href="calendar.html">Calendar</a></li>
+									<li><a href="components.html">Components</a></li>
+									<li class="has-submenu">
+										<a href="invoices.html">Invoices</a>
+										<ul class="submenu">
+											<li><a href="invoices.html">Invoices</a></li>
+											<li><a href="invoice-view.html">Invoice View</a></li>
+										</ul>
+									</li>
+									<li><a href="blank-page.html">Starter Page</a></li>
+                                    <li><a href="about-us.html">About Us</a></li>
+                                    <li><a href="contact-us.html">Contact Us</a></li></li>
+									<li><a href="login.html">Login</a></li>
+									<li><a href="register.html">Register</a></li>
+									<li><a href="forgot-password.html">Forgot Password</a></li>
+								</ul>
+							</li>
+							<li class="has-submenu">
+								<a href="">Blog <i class="fas fa-chevron-down"></i></a>
+								<ul class="submenu">
+									<li><a href="blog-list.html">Blog List</a></li>
+									<li><a href="blog-grid.html">Blog Grid</a></li>
+									<li><a href="blog-details.html">Blog Details</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="admin/index.html" target="_blank">Admin</a>
+							</li>
+							<li class="login-link">
+								<a href="login.html">Login / Signup</a>
+							</li>
+						</ul>	 
+					</div>	 
+					<ul class="nav header-navbar-rht">
+						<li class="nav-item">
+							<a class="nav-link header-login" href="login.html">Login / Signup <i class="fas fa-arrow-circle-right"></i></a>
+						</li>
+					</ul>
+				</nav>
+			</header>
+			<!-- /Header -->
+			
+			<!-- Home Banner -->
+			<section class="section home-banner">
+				<div class="container-fluid">
+					<div class="row banner-wrapper">
+						<div class="col-md-5">
+							<div class="banner-header">
+								<h1>Great Sight For Healthy Lifestyle!</h1>
+								<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+								<button class="btn btn-primary mt-4">Make an Appointment</button>
+							</div>
+							<a href="#" class="see-doc">See Our Doctors <i class="fas fa-arrow-circle-right"></i></a>
+						</div>
+
+						<div class="col-md-7">
+							<div class="video-bg-img video-class" data-video-id="pJ61K33EBkI" data-video-format="youtube">
+								<img src="assets/img/banner-video.png" alt=".." class="img-fluid w-100">
+								<span class="play-btn">
+									<i class="fas fa-play"></i>
+								</span>
+							</div>
+							<div class="media d-flex">
+								<i class="fas fa-calendar-check"></i>
+								<div class="media-body flex-grow-1">
+								  <h5 class="mt-0">Opening Hours</h5>
+								  <p>Mon - Fri : 09.00 AM to 05.00 PM </p>
+								  <p>Closed on Sunday</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- /Home Banner -->
+
+			<!-- Our Special Services -->
+			<section class="section section-special-services">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-4">
+							<div>
+								<h2 class="section-title">Our Special Services For You</h2>
+								<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inve ntore veritatis et quasi architecto accusantium beatae vitae dicta sunt explicabo, sed ut perspic iatis unde omnis iste natus error sit voluptatem accusa ntium accusantium.</p>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="card">
+								<div>
+									<img src="assets/img/icon-1.png" alt="Service Image" class="img-fluid" />
+								</div>								
+								<h3>Diagnosis and treatment</h3>
+								<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolo remque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore.</p>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="card">
+								<div>
+									<img src="assets/img/icon-2.png" alt="Service Image" class="img-fluid" />
+								</div>								
+								<h3>Eye examination</h3>
+								<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolo remque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore.</p>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="card">
+								<div>
+									<img src="assets/img/icon-3.png" alt="Service Image" class="img-fluid" />
+								</div>								
+								<h3>Laser eye correction</h3>
+								<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolo remque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore.</p>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="card">
+								<div>
+									<img src="assets/img/icon-4.png" alt="Service Image" class="img-fluid" />
+								</div>								
+								<h3>Evaluating eye coordination</h3>
+								<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolo remque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore.</p>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="card">
+								<div>
+									<img src="assets/img/icon-5.png" alt="Service Image" class="img-fluid" />
+								</div>								
+								<h3>Contact lenses</h3>
+								<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolo remque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- /Our Special Services -->
+
+			<!-- Our Doctors -->
+			<section class="section our-doctors">
+				<div class="container">
+					<div class="text-center">
+						<h2 class="section-title">Our Doctors</h2>
+						<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab.</p>
+					</div>
+					<div class="doctor-slider slider">
+							
+						<!-- Doctor Widget -->
+						<div class="doc-profile-widgets">
+							<div class="doc-image-show">
+								<img src="assets/img/doctors/doctor-011.jpg" class="img-fluid" alt=".."/>
+							</div>
+							<div class="card">							
+								<div class="pro-content">
+									<h3 class="title">
+										<a href="doctor-profile.html">Gloria Smith</a>
+									</h3>
+									<p class="speciality">B.Sc. Optometry</p>
+									<div class="rating">
+										<i class="fas fa-star filled"></i>
+										<i class="fas fa-star filled"></i>
+										<i class="fas fa-star filled"></i>
+										<i class="fas fa-star filled"></i>
+										<i class="far fa-star filled"></i>
+										<span class="d-inline-block average-rating">(17)</span>
+									</div>
+									<ul class="available-info">
+										<li>
+											<i class="fas fa-map-marker-alt"></i> Florida, USA
+										</li>
+										<li>
+											<i class="fas fa-calendar-check"></i> Available on Fri, 22 Mar
+										</li>
+										<li>
+											<i class="fas fa-wallet"></i> $300 - $1000
+										</li>
+									</ul>
+								</div>
+								<div class="card-btn">
+									<a href="#" class="btn btn-view">
+										View Profile
+									</a>
+									<a href="#" class="btn btn-book-now">
+										Book Now
+									</a>
+								</div>
+							</div>
+						</div>
+						<!-- /Doctor Widget -->
+
+						<!-- Doctor Widget -->
+						<div class="doc-profile-widgets">
+							<div class="doc-image-show">
+								<img src="assets/img/doctors/doctor-012.jpg" class="img-fluid" alt=".." />
+							</div>
+							<div class="card">							
+								<div class="pro-content">
+									<h3 class="title">
+										<a href="doctor-profile.html">Randy Johnson</a>
+									</h3>
+									<p class="speciality">B.Sc. Optometry</p>
+									<div class="rating">
+										<i class="fas fa-star filled"></i>
+										<i class="fas fa-star filled"></i>
+										<i class="fas fa-star filled"></i>
+										<i class="fas fa-star filled"></i>
+										<i class="far fa-star filled"></i>
+										<span class="d-inline-block average-rating">(17)</span>
+									</div>
+									<ul class="available-info">
+										<li>
+											<i class="fas fa-map-marker-alt"></i> Florida, USA
+										</li>
+										<li>
+											<i class="fas fa-calendar-check"></i> Available on Fri, 22 Mar
+										</li>
+										<li>
+											<i class="fas fa-wallet"></i> $300 - $1000
+										</li>
+									</ul>
+								</div>
+								<div class="card-btn">
+									<a href="#" class="btn btn-view">
+										View Profile
+									</a>
+									<a href="#" class="btn btn-book-now">
+										Book Now
+									</a>
+								</div>
+							</div>
+						</div>
+						<!-- /Doctor Widget -->
+
+						<!-- Doctor Widget -->
+						<div class="doc-profile-widgets">
+							<div class="doc-image-show">
+								<img src="assets/img/doctors/doctor-013.jpg" class="img-fluid" alt=".." />
+							</div>
+							<div class="card">							
+								<div class="pro-content">
+									<h3 class="title">
+										<a href="doctor-profile.html">Bridgette</a>
+									</h3>
+									<p class="speciality">B.Sc. Optometry</p>
+									<div class="rating">
+										<i class="fas fa-star filled"></i>
+										<i class="fas fa-star filled"></i>
+										<i class="fas fa-star filled"></i>
+										<i class="fas fa-star filled"></i>
+										<i class="far fa-star filled"></i>
+										<span class="d-inline-block average-rating">(17)</span>
+									</div>
+									<ul class="available-info">
+										<li>
+											<i class="fas fa-map-marker-alt"></i> Florida, USA
+										</li>
+										<li>
+											<i class="fas fa-calendar-check"></i> Available on Fri, 22 Mar
+										</li>
+										<li>
+											<i class="fas fa-wallet"></i> $300 - $1000
+										</li>
+									</ul>
+								</div>
+								<div class="card-btn">
+									<a href="#" class="btn btn-view">
+										View Profile
+									</a>
+									<a href="#" class="btn btn-book-now">
+										Book Now
+									</a>
+								</div>
+							</div>
+						</div>
+						<!-- /Doctor Widget -->	
+
+						<!-- Doctor Widget -->
+						<div class="doc-profile-widgets">
+							<div class="doc-image-show">
+								<img src="assets/img/doctors/doctor-011.jpg" class="img-fluid" alt=".."/>
+							</div>
+							<div class="card">							
+								<div class="pro-content">
+									<h3 class="title">
+										<a href="doctor-profile.html">Gloria Smith</a>
+									</h3>
+									<p class="speciality">B.Sc. Optometry</p>
+									<div class="rating">
+										<i class="fas fa-star filled"></i>
+										<i class="fas fa-star filled"></i>
+										<i class="fas fa-star filled"></i>
+										<i class="fas fa-star filled"></i>
+										<i class="far fa-star filled"></i>
+										<span class="d-inline-block average-rating">(17)</span>
+									</div>
+									<ul class="available-info">
+										<li>
+											<i class="fas fa-map-marker-alt"></i> Florida, USA
+										</li>
+										<li>
+											<i class="fas fa-calendar-check"></i> Available on Fri, 22 Mar
+										</li>
+										<li>
+											<i class="fas fa-wallet"></i> $300 - $1000
+										</li>
+									</ul>
+								</div>
+								<div class="card-btn">
+									<a href="#" class="btn btn-view">
+										View Profile
+									</a>
+									<a href="#" class="btn btn-book-now">
+										Book Now
+									</a>
+								</div>
+							</div>
+						</div>
+						<!-- /Doctor Widget -->
+
+						<!-- Doctor Widget -->
+						<div class="doc-profile-widgets">
+							<div class="doc-image-show">
+								<img src="assets/img/doctors/doctor-012.jpg" class="img-fluid" alt=".." />
+							</div>
+							<div class="card">							
+								<div class="pro-content">
+									<h3 class="title">
+										<a href="doctor-profile.html">Randy Johnson</a>
+									</h3>
+									<p class="speciality">B.Sc. Optometry</p>
+									<div class="rating">
+										<i class="fas fa-star filled"></i>
+										<i class="fas fa-star filled"></i>
+										<i class="fas fa-star filled"></i>
+										<i class="fas fa-star filled"></i>
+										<i class="far fa-star filled"></i>
+										<span class="d-inline-block average-rating">(17)</span>
+									</div>
+									<ul class="available-info">
+										<li>
+											<i class="fas fa-map-marker-alt"></i> Florida, USA
+										</li>
+										<li>
+											<i class="fas fa-calendar-check"></i> Available on Fri, 22 Mar
+										</li>
+										<li>
+											<i class="fas fa-wallet"></i> $300 - $1000
+										</li>
+									</ul>
+								</div>
+								<div class="card-btn">
+									<a href="#" class="btn btn-view">
+										View Profile
+									</a>
+									<a href="#" class="btn btn-book-now">
+										Book Now
+									</a>
+								</div>
+							</div>
+						</div>
+						<!-- /Doctor Widget -->
+
+						<!-- Doctor Widget -->
+						<div class="doc-profile-widgets">
+							<div class="doc-image-show">
+								<img src="assets/img/doctors/doctor-013.jpg" class="img-fluid" alt=".." />
+							</div>
+							<div class="card">							
+								<div class="pro-content">
+									<h3 class="title">
+										<a href="doctor-profile.html">Bridgette</a>
+									</h3>
+									<p class="speciality">B.Sc. Optometry</p>
+									<div class="rating">
+										<i class="fas fa-star filled"></i>
+										<i class="fas fa-star filled"></i>
+										<i class="fas fa-star filled"></i>
+										<i class="fas fa-star filled"></i>
+										<i class="far fa-star filled"></i>
+										<span class="d-inline-block average-rating">(17)</span>
+									</div>
+									<ul class="available-info">
+										<li>
+											<i class="fas fa-map-marker-alt"></i> Florida, USA
+										</li>
+										<li>
+											<i class="fas fa-calendar-check"></i> Available on Fri, 22 Mar
+										</li>
+										<li>
+											<i class="fas fa-wallet"></i> $300 - $1000
+										</li>
+									</ul>
+								</div>
+								<div class="card-btn">
+									<a href="#" class="btn btn-view">
+										View Profile
+									</a>
+									<a href="#" class="btn btn-book-now">
+										Book Now
+									</a>
+								</div>
+							</div>
+						</div>
+						<!-- /Doctor Widget -->	
+					</div>
+				</div>
+			</section>
+			<!-- /Our Doctors -->
+
+			<!-- Our Client Say's -->
+			<section class="client-says">
+				<div class="container">
+					<div class="text-center w-80">
+						<h2 class="section-title">Our Client Say's</h2>
+						<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inve ntore veritatis et quasi architecto accusantium beatae.</p>
+					</div>
+
+					<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+						<ol class="carousel-indicators">
+						  <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
+						  <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
+						  <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
+						</ol>
+						<div class="carousel-inner">
+							<!-- Item 1 -->
+						  	<div class="carousel-item active">
+							  	<div class="card-testi">
+									<img src="assets/img/testimonial/testi-01.png" class="d-block" alt="...">
+									<h4>John Smith</h4>
+									<div class="rating">
+										<i class="fas fa-star filled"></i>
+										<i class="fas fa-star filled"></i>
+										<i class="fas fa-star filled"></i>
+										<i class="fas fa-star filled"></i>
+										<i class="far fa-star filled"></i>
+									</div>
+									<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inve ntore veritatis et quasi architecto accusantium beatae.</p>
+							  	</div>							
+							</div>
+							<!-- Item 2 -->
+							<div class="carousel-item">
+								<div class="card-testi">
+								  <img src="assets/img/testimonial/testi-02.png" class="d-block" alt="...">
+								  <h4>Gloria Smith</h4>
+								  <div class="rating">
+									  <i class="fas fa-star filled"></i>
+									  <i class="fas fa-star filled"></i>
+									  <i class="fas fa-star filled"></i>
+									  <i class="far fa-star filled"></i>
+									  <i class="far fa-star filled"></i>
+								  </div>
+								  <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inve ntore veritatis et quasi architecto accusantium beatae.</p>
+								</div>							
+						  </div>
+						  
+						</div>
+						<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
+							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+							<span class="visually-hidden">Previous</span>
+						</a>
+						<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-bs-slide="next">
+							<span class="carousel-control-next-icon" aria-hidden="true"></span>
+							<span class="visually-hidden">Next</span>
+						</a>
+					</div>
+				</div>
+			</section>
+		   <!-- /Our Client Say's -->
+
+		   <!-- Contact Us -->
+		   <section class="contact-us">
+				<div class="container">
+										
+					<div class="row">
+						<div class="col-md-7">
+							
+							<div class="map-view">
+								<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26373919.386353854!2d-113.76666163476126!3d36.203706779654745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54eab584e432360b%3A0x1c3bb99243deb742!2sUnited%20States!5e0!3m2!1sen!2sin!4v1606988919902!5m2!1sen!2sin"></iframe>
+							</div>
+						</div>
+						<div class="col-md-5">
+							<h2 class="section-title">Let's Contact Us</h2>
+							<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+							<div class="loc-details">
+								<ul>
+									<li>
+										<i class="fas fa-phone-alt"></i>
+										<span>(810) 658-1649</span>
+									</li>
+									<li>
+										<i class="fas fa-map-marker-alt"></i>
+										<span>300 S Main St #APT 208, Davison, MI, 48423</span>
+									</li>
+								</ul>
+							</div>
+
+							<h2 class="section-title mt-4">Working Hours</h2>
+							<div class="loc-details">
+								<ul class="mb-0">
+									<li class="d-flex justify-content-between">
+										<span>Monday</span>
+										<span>09:00 am to 05:00 pm</span>
+									</li>
+									<li class="d-flex justify-content-between">
+										<span>Tuesday</span>
+										<span>09:00 am to 05:00 pm</span>
+									</li>
+									<li class="d-flex justify-content-between">
+										<span>Wednesday</span>
+										<span>09:00 am to 05:00 pm</span>
+									</li>
+									<li class="d-flex justify-content-between">
+										<span>Thursday</span>
+										<span>09:00 am to 05:00 pm</span>
+									</li>
+									<li class="d-flex justify-content-between">
+										<span>Friday</span>
+										<span>09:00 am to 05:00 pm</span>
+									</li>
+									<li class="d-flex justify-content-between">
+										<span>Saturday</span>
+										<span>09:00 am to 05:00 pm</span>
+									</li>
+									<li class="d-flex justify-content-between">
+										<span>Sunday</span>
+										<span>Closed</span>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+		   </section>
+		   <!-- /Contact Us -->					
+			
+			<!-- Footer -->
+			<footer class="footer">
+				
+				<!-- Footer Top -->
+				<div class="footer-top">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-6 col-md-6">
+							
+								<!-- Footer Widget -->
+								<div class="footer-widget footer-about">
+									<div class="footer-logo">
+										<img src="assets/img/logo.png" alt="logo">
+									</div>
+									<div class="footer-about-content">
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+										<div class="social-icon">
+											<ul>
+												<li>
+													<a href="#" target="_blank"><i class="fab fa-facebook-f"></i> </a>
+												</li>
+												<li>
+													<a href="#" target="_blank"><i class="fab fa-google-plus-g"></i> </a>
+												</li>
+												<li>
+													<a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+												</li>
+												<li>
+													<a href="#" target="_blank"><i class="fab fa-twitter"></i> </a>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<!-- /Footer Widget -->
+								
+							</div>
+
+							<div class="col-lg-2 col-md-6">
+							
+								<!-- Footer Widget -->
+								<div class="footer-widget footer-menu">
+									<h2 class="footer-title">Links</h2>
+									<ul>
+										<li><a href="login.html">Login</a></li>
+										<li><a href="register.html">Register</a></li>
+										<li><a href="blog-grid.html">Blogs</a></li>
+										<li><a href="term-condition.html">Terms</a></li>
+										<li><a href="privacy-policy.html">Privacy Policy</a></li>
+									</ul>
+								</div>
+								<!-- /Footer Widget -->
+								
+							</div>
+							
+							<div class="col-lg-2 col-md-6">
+							
+								<!-- Footer Widget -->
+								<div class="footer-widget footer-menu">
+									<h2 class="footer-title">For Patients</h2>
+									<ul>
+										<li><a href="search.html">Search for Doctors</a></li>
+										<li><a href="login.html">Login</a></li>
+										<li><a href="register.html">Register</a></li>
+										<li><a href="booking.html">Booking</a></li>
+										<li><a href="patient-dashboard.html">Patient Dashboard</a></li>
+									</ul>
+								</div>
+								<!-- /Footer Widget -->
+								
+							</div>
+							
+							<div class="col-lg-2 col-md-6">
+							
+								<!-- Footer Widget -->
+								<div class="footer-widget footer-menu">
+									<h2 class="footer-title">For Doctors</h2>
+									<ul>
+										<li><a href="appointments.html">Appointments</a></li>
+										<li><a href="chat.html">Chat</a></li>
+										<li><a href="login.html">Login</a></li>
+										<li><a href="doctor-register.html">Register</a></li>
+										<li><a href="doctor-dashboard.html">Doctor Dashboard</a></li>
+									</ul>
+								</div>
+								<!-- /Footer Widget -->
+								
+							</div>
+							
+						</div>
+					</div>
+				</div>
+				<!-- /Footer Top -->
+				
+				<!-- Footer Bottom -->
+                <div class="footer-bottom">
+					<div class="container-fluid">
+
+						<div class="download-app">
+							<ul>
+								<li>
+									<p>Download Optometrycare App On : </p>
+								</li>
+								<li>
+									<a href="#">
+										<img src="assets/img/play-store.png" alt="Play Store" />
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<img src="assets/img/app-store.png" alt="App Store" />
+									</a>
+								</li>
+							</ul>
+						</div>
+						
+					</div>
+				</div>
+				<!-- /Footer Bottom -->
+				
+			</footer>
+			<!-- /Footer -->
+		   
+	   	</div>
+	   <!-- /Main Wrapper -->
+	  
+		<!-- jQuery -->
+		<script src="assets/js/jquery-3.6.0.min.js"></script>
+		
+		<!-- Bootstrap Core JS -->
+		<script src="assets/js/bootstrap.bundle.min.js"></script>
+		
+		<!-- Slick JS -->
+		<script src="assets/js/slick.js"></script>
+		
+		<!-- Custom JS -->
+		<script src="assets/js/script.js"></script>
+		
+	</body>
+</html>

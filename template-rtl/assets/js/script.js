@@ -1572,4 +1572,22 @@ Version      : 1.3
 		$('.upload-sucess-note h6:nth-child(2)').fadeOut().hide(400);
 	});
 	
+
+	// change password visiblility
+
+	$('.spectate-password').click(function () {
+		let password_type = $(this).siblings("input[type='password']").attr("type");
+		password_type = password_type == 'password' ? 'text' : 'password';
+
+		$(this).siblings("input[type='password'], input[type='text']").attr("type", password_type);
+		$(this).toggleClass('bi bi-eye-slash-fill');
+	});
+
+	// getting verfication code
+
+	$('.single-code-input').keyup(function () {
+		$(this).blur();
+		$(this).next().focus();
+	});
+
 })(jQuery);

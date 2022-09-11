@@ -18,8 +18,17 @@
 		<!-- Datetimepicker CSS -->
 		<link rel="stylesheet" href="assets/css/bootstrap-datetimepicker.min.css">
 		
+		<!-- Feathericon CSS -->
+        <link rel="stylesheet" href="assets/css/feather.css">
+
+        <link rel="stylesheet" href="sidebar.css">
+
+		
+		<link rel="stylesheet" href="../fullcalendar/lib/main.min.css">
+		<script src="../fullcalendar/lib/main.min.js"></script>
+		<script src="../fullcalendar/lib/locales/ar.js"></script>
 		<!-- Full Calander CSS -->
-        <link rel="stylesheet" href="assets/plugins/fullcalendar/fullcalendar.min.css">
+        <!-- <link rel="stylesheet" href="assets/plugins/fullcalendar/fullcalendar.min.css"> -->
 		
 		<!-- Main CSS -->
 		<link rel="stylesheet" href="assets/css/style.css">
@@ -195,23 +204,127 @@
 				</nav>
 			</header>
 			<!-- /Header -->
+
+			<!-- Sidebar -->
+			<div class="sidebar" id="sidebar">
+				<div class="sidebar-inner slimscroll">
+					<div id="sidebar-menu" class="sidebar-menu">
+						<ul>
+							<li class="menu-title"><span>Main</span></li>
+							<li class="active">
+								<a href="index.html"><i class="feather-home"></i> <span>Dashboard</span></a>
+							</li>
+							<li class="submenu">
+								<a href="#"><i class="feather-shopping-cart"></i> <span> Products</span> <span class="menu-arrow"></span></a>
+								<ul>
+									<li><a href="products.html">Products</a></li>
+									<li><a href="add-product.html">Add Product</a></li>
+									<li><a href="outstock.html">Out Stock</a></li>
+									<li><a href="expired.html">Expired</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="categories.html"><i class="feather-layout"></i> <span>Categories</span></a>
+							</li>
+							<li class="submenu">
+								<a href="#"><i class="feather-star"></i> <span> Purchase</span> <span class="menu-arrow"></span></a>
+								<ul>
+									<li><a href="purchase.html">Purchase</a></li>
+									<li><a href="add-purchase.html">Add Purchase</a></li>
+									<li><a href="order.html">Orders</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="sales.html"><i class="feather-activity"></i> <span>Sales</span></a>
+							</li>
+							<li class="submenu">
+								<a href="#"><i class="feather-user"></i> <span> Supplier</span> <span class="menu-arrow"></span></a>
+								<ul>
+									<li><a href="supplier.html">Supplier</a></li>
+									<li><a href="add-supplier.html">Add Supplier</a></li>
+								</ul>
+							</li>	
+							<li> 
+								<a href="transactions-list.html"><i class="feather-credit-card"></i> <span> Transaction</span></a>
+							</li>
+							<li class="submenu">
+								<a href="#"><i class="feather-file-text"></i> <span> Reports</span> <span class="menu-arrow"></span></a>
+								<ul>
+									<li><a href="invoice.html">Invoice</a></li>
+									<li><a href="invoice-report.html">Invoice Reports</a></li>
+								</ul>
+							</li>	
+							<li class="menu-title"> 
+								<span>Pages</span>
+							</li>				
+							<li> 
+								<a href="profile.html"><i class="feather-user"></i> <span>Profile</span></a>
+							</li>
+							<li> 
+								<a href="settings.html"><i class="feather-sliders"></i> <span>Settings</span></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!-- /Sidebar -->
+
+
+			<!-- Sidebar -->
+			<div class="left-sidebar sidebar text-start px-3 border border-bottom-0" id="sidebar" style="left: 0%; right: unset; width: auto;">
+				<div class="sidebar-inner slimscroll">
+					<div id="sidebar-menu" class="sidebar-menu">
+						<ul class="ml-2">
+							<li class="menu-title text-start w-100"><span class="w-100">قائمة الانتظار</span></li>
+							<li class="active mt-3 pl-2 mb-5">
+								<div class="d-inline p-3 bg-dark text-white rounded-3">8 المريض</div>
+								<div class="d-inline p-3 bg-secondary text-white rounded-3">12 الانتظار</div>
+								<!-- <a href="index.html"><i class="feather-home"></i> <span>Dashboard</span></a> -->
+							</li>
+
+							<li class="active mt-3 p-2 border border-dark rounded m-2 row m-0">
+								<span class="patient-number col-3 order-3">8</span>
+								<span class="patient-name col order-2">some one</span>
+								<i class="bi bi-clock-history col-1 order-1"></i>
+							</li>
+
+							<li class="active mt-3 p-2 border border-dark rounded m-2 row m-0">
+								<span class="patient-number col-3 order-3">8</span>
+								<span class="patient-name col order-2">some one</span>
+								<i class="bi bi-clock-history col-1 order-1"></i>
+							</li>
+
+							<li class="active mt-3 p-2 border border-dark rounded m-2 row m-0">
+								<span class="patient-number col-3 order-3">8</span>
+								<span class="patient-name col order-2">some one</span>
+								<i class="bi bi-clock-history col-1 order-1"></i>
+							</li>
+
+							<li class="active mt-3 p-2 border border-dark rounded m-2 row m-0">
+								<span class="patient-number col-3 order-3">8</span>
+								<span class="patient-name col order-2">some one</span>
+								<i class="bi bi-clock-history col-1 order-1"></i>
+							</li>
+
+							<li class="active mt-3 p-2 border border-dark rounded m-2 row m-0">
+								<span class="patient-number col-3 order-3">8</span>
+								<span class="patient-name col order-2">some one</span>
+								<i class="bi bi-clock-history col-1 order-1"></i>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!-- /Sidebar -->
 			
 			<!-- Breadcrumb -->
-			<div class="breadcrumb-bar">
+			<!-- <div class="breadcrumb-bar">
 				<div class="container-fluid">
 					<div class="row align-items-center">
-						<div class="col">
-							<nav aria-label="breadcrumb" class="page-breadcrumb">
-								<ol class="breadcrumb">
-									<li class="breadcrumb-item"><a href="index.html">Home</a></li>
-									<li class="breadcrumb-item active" aria-current="page">Calendar</li>
-								</ol>
-							</nav>
-							<h2 class="breadcrumb-title">Calendar</h2>
-						</div>
+
 						<div class="col-auto text-end float-end ms-auto">
 							<a href="#" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#add_event">Create Event</a>
-						</div>
+						</div> -->
 					</div>
 				</div>
 			</div>
@@ -221,37 +334,10 @@
 			<div class="content">
 				<div class="container-fluid">
 
-					<div class="row">
-						
-						<!-- Calendar Events -->
-						<div class="col-md-5 col-lg-4 col-xl-3 theiaStickySidebar">
-							<div class="card">
-								<div class="card-header">
-									<h4 class="card-title mb-0">Drag & Drop Event</h4>
-								</div>
-								<div class="card-body">
-									<div id="calendar-events" class="mb-3">
-										<div class="calendar-events" data-class="bg-info"><i class="fas fa-circle text-info"></i> My Event One</div>
-										<div class="calendar-events" data-class="bg-success"><i class="fas fa-circle text-success"></i> My Event Two</div>
-										<div class="calendar-events" data-class="bg-danger"><i class="fas fa-circle text-danger"></i> My Event Three</div>
-										<div class="calendar-events" data-class="bg-warning"><i class="fas fa-circle text-warning"></i> My Event Four</div>
-									</div>
-									<div class="checkbox mb-3">
-										<input id="drop-remove" type="checkbox">
-										<label for="drop-remove">
-											Remove after drop
-										</label>
-									</div>
-									<a href="#" data-bs-toggle="modal" data-bs-target="#add_new_event" class="btn btn-primary w-100">
-										<i class="fas fa-plus"></i> Add Category
-									</a>
-								</div>
-							</div>
-						</div>
-						<!-- /Calendar Events -->
+					<div class="row justify-content-center">
 						
 						<!-- Calendar -->
-						<div class="col-md-7 col-lg-8 col-xl-9">
+						<div class="col-8">
 							<div class="card">
 								<div class="card-body">
 									<div id="calendar"></div>
@@ -271,104 +357,6 @@
 			<footer class="footer">
 				
 				<!-- Footer Top -->
-				<div class="footer-top">
-					<div class="container-fluid">
-						<div class="row">
-							<div class="col-lg-3 col-md-6">
-							
-								<!-- Footer Widget -->
-								<div class="footer-widget footer-about">
-									<div class="footer-logo">
-										<img src="assets/img/footer-logo.png" alt="logo">
-									</div>
-									<div class="footer-about-content">
-										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-										<div class="social-icon">
-											<ul>
-												<li>
-													<a href="#" target="_blank"><i class="fab fa-facebook-f"></i> </a>
-												</li>
-												<li>
-													<a href="#" target="_blank"><i class="fab fa-twitter"></i> </a>
-												</li>
-												<li>
-													<a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-												</li>
-												<li>
-													<a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
-												</li>
-												<li>
-													<a href="#" target="_blank"><i class="fab fa-dribbble"></i> </a>
-												</li>
-											</ul>
-										</div>
-									</div>
-								</div>
-								<!-- /Footer Widget -->
-								
-							</div>
-							
-							<div class="col-lg-3 col-md-6">
-							
-								<!-- Footer Widget -->
-								<div class="footer-widget footer-menu">
-									<h2 class="footer-title">For Patients</h2>
-									<ul>
-										<li><a href="search.html">Search for Doctors</a></li>
-										<li><a href="login.html">Login</a></li>
-										<li><a href="register.html">Register</a></li>
-										<li><a href="booking.html">Booking</a></li>
-										<li><a href="patient-dashboard.html">Patient Dashboard</a></li>
-									</ul>
-								</div>
-								<!-- /Footer Widget -->
-								
-							</div>
-							
-							<div class="col-lg-3 col-md-6">
-							
-								<!-- Footer Widget -->
-								<div class="footer-widget footer-menu">
-									<h2 class="footer-title">For Doctors</h2>
-									<ul>
-										<li><a href="appointments.html">Appointments</a></li>
-										<li><a href="chat.html">Chat</a></li>
-										<li><a href="login.html">Login</a></li>
-										<li><a href="doctor-register.html">Register</a></li>
-										<li><a href="doctor-dashboard.html">Doctor Dashboard</a></li>
-									</ul>
-								</div>
-								<!-- /Footer Widget -->
-								
-							</div>
-							
-							<div class="col-lg-3 col-md-6">
-							
-								<!-- Footer Widget -->
-								<div class="footer-widget footer-contact">
-									<h2 class="footer-title">Contact Us</h2>
-									<div class="footer-contact-info">
-										<div class="footer-address">
-											<span><i class="fas fa-map-marker-alt"></i></span>
-											<p> 3556  Beech Street, San Francisco,<br> California, CA 94108 </p>
-										</div>
-										<p>
-											<i class="fas fa-phone-alt"></i>
-											+1 315 369 5943
-										</p>
-										<p class="mb-0">
-											<i class="fas fa-envelope"></i>
-											doccure@example.com
-										</p>
-									</div>
-								</div>
-								<!-- /Footer Widget -->
-								
-							</div>
-							
-						</div>
-					</div>
-				</div>
 				<!-- /Footer Top -->
 				
 				<!-- Footer Bottom -->
@@ -414,25 +402,43 @@
 			<div class="modal-dialog modal-dialog-centered" role="document">
 				<div class="modal-content">
 					<div class="modal-header">
-						<h4 class="modal-title">Add Event</h4>
+						<h4 class="modal-title">احجز موعدا</h4>
 						<button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
 							<span aria-hidden="true">&times;</span>
 						</button>
 					</div>
 					<div class="modal-body">
-						<form>
-							<div class="form-group">
-								<label>Event Name <span class="text-danger">*</span></label>
+						<form class="row justify-content-between">
+
+							<div class="col-12 row">
+								<i class="cal-icon fst-normal p-1" style="width: 10%"></i>
+								<p class="col selected-date w-50 py-3"></p>
+							</div>
+
+							<div class="col-6 form-group">
+								<label>اسم الدكتور <span class="text-danger">*</span></label>
 								<input class="form-control" type="text">
 							</div>
-							<div class="form-group">
-								<label>Event Date <span class="text-danger">*</span></label>
+
+							<div class="col-6 form-group">
+								<label>موعد النسجيل <span class="text-danger">*</span></label>
 								<div class="cal-icon">
-									<input class="form-control datetimepicker" type="text">
+									<input class="form-control" type="text">
+									<!-- <input class="form-control datetimepicker" type="text"> -->
 								</div>
 							</div>
+
+							<div class="col-12 form-group">
+								<label>تعليق</label>
+								<div class="">
+									<textarea class="form-control" id="exampleFormControlTextarea1"></textarea>
+								</div>
+							</div>
+
+							<input type="hidden" name="date-to-send">
+
 							<div class="submit-section">
-								<button class="btn btn-primary submit-btn">Submit</button>
+								<button class="btn btn-primary submit-btn w-50">تسجيل</button>
 							</div>
 						</form>
 					</div>
@@ -440,7 +446,328 @@
 			</div>
 		</div>
 		<!-- /Add Event Modal -->
+
+				<!-- Add Event Modal -->
+				<div id="add_event2" class="modal custom-modal fade" role="dialog">
+					<div class="modal-dialog modal-dialog-centered" role="document">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h4 class="modal-title">بيانات المريض</h4>
+								<button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+									<span aria-hidden="true">&times;</span>
+								</button>
+							</div>
+							<div class="modal-body">
+								<form class="row justify-content-between">
 		
+									<div class="col-12 row py-5">
+										<div class="col-6 my-1">
+											<i class="bi bi-calendar-date-fill"></i>
+											<p class="col selected-date d-inline mx-1">الثلاثاء , 23, اغسطس</p>
+										</div>
+										
+										<div class="col-6 my-1">
+											<i class="bi bi-clock-fill"></i>
+											<p class="col selected-date mx-1 d-inline" style="direction: ltr;"> 7 : PM </p>
+										</div>
+
+										<div class="col-6 my-1">
+											<i class="bi bi-person-fill"></i>
+											<p class="col selected-date d-inline mx-1">احمد سعيد</p>
+										</div>
+									</div>
+		
+									<div class="col-6 form-group">
+										<label> تاريخ الميلاد </label>
+										<input class="form-control datetimepicker" type="text">
+									</div>
+		
+									<div class="col-6 form-group">
+										<label>البريد الالكتروني </label>
+										<div class="">
+											<input class="form-control" type="text">
+											<!-- <input class="form-control datetimepicker" type="text"> -->
+										</div>
+									</div>
+
+									<div class="col-6 form-group">
+										<label> العنوان </label>
+										<div class="">
+											<input class="form-control" type="text">
+											<!-- <input class="form-control datetimepicker" type="text"> -->
+										</div>
+									</div>
+
+									<div class="col-6 form-group">
+										<label>نوع الزيارة </label>
+										<div class="">
+											<select class="form-control form-select form-select-md" name="" id="">
+												<option selected value="consultant"> استشارة </option>
+												<option value="scan"> كشف </option>
+											</select>
+										</div>
+									</div>
+		
+									<input type="hidden" name="date-to-send">
+		
+									<div class="submit-section">
+										<button class="btn btn-primary submit-btn w-100">تسجيل</button>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- /Add Event Modal -->
+		
+								<!-- Add Event Modal -->
+								<div id="add_event3" class="modal custom-modal fade" role="dialog">
+									<div class="modal-dialog modal-dialog-centered" role="document">
+										<div class="modal-content">
+											<div class="modal-header">
+												<h4 class="modal-title">اضافة موعد</h4>
+												<button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+													<span aria-hidden="true">&times;</span>
+												</button>
+											</div>
+											<div class="modal-body">
+												<form class="row justify-content-between">
+						
+													<div class="col-6 form-group">
+														<label>الاسم </label>
+														<div class="">
+															<input class="form-control" type="text">
+															<!-- <input class="form-control datetimepicker" type="text"> -->
+														</div>
+													</div>
+													
+													<div class="col-6 form-group">
+														<label> تاريخ الميلاد </label>
+														<div>
+															<input class="form-control datetimepicker" type="text">
+														</div>
+													</div>
+
+													<div class="col-6 form-group">
+														<label>البريد الالكتروني </label>
+														<div class="">
+															<input class="form-control" type="text">
+															<!-- <input class="form-control datetimepicker" type="text"> -->
+														</div>
+													</div>
+						
+				
+													<div class="col-6 form-group">
+														<label> العنوان </label>
+														<div class="">
+															<input class="form-control" type="text">
+															<!-- <input class="form-control datetimepicker" type="text"> -->
+														</div>
+													</div>
+				
+													<div class="col-6 form-group">
+														<label> التاريخ </label>
+														<div>
+															<input class="form-control datetimepicker" type="text">
+														</div>
+													</div>
+													<div class="col-6 form-group">
+														<label> الوقت </label>
+														<div>
+															<input class="form-control" type="text">
+														</div>
+													</div>
+
+													<div class="col-12 form-group">
+														<label>نوع الزيارة </label>
+														<div class="">
+															<select class="form-control form-select form-select-md" name="" id="">
+																<option selected value="consultant"> استشارة </option>
+																<option value="scan"> كشف </option>
+															</select>
+														</div>
+													</div>
+						
+													<input type="hidden" name="date-to-send">
+						
+													<div class="submit-section">
+														<button class="btn btn-primary submit-btn w-100">تسجيل</button>
+													</div>
+												</form>
+											</div>
+										</div>
+									</div>
+								</div>
+
+										<!-- Add Event Modal -->
+										<div id="add_event4" class="modal custom-modal fade" role="dialog">
+											<div class="modal-dialog modal-dialog-centered" role="document">
+												<div class="modal-content">
+													<div class="modal-header">
+														<h4 class="modal-title">الانتظار</h4>
+														<button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+															<span aria-hidden="true">&times;</span>
+														</button>
+													</div>
+													<div class="modal-body">
+														<form>
+
+															<style>
+																.patient-info-row:nth-child(even) {
+																	background-color: #f3f3f3;
+																}
+															</style>
+
+															<div class="row patient-queue m-0">
+
+																
+																<div class="patient-info-row py-4 row">
+
+																	<div class="col-6 row">
+																		<i class="bi bi-person-circle col-2"></i>
+																		<div class="col d-inline">
+																			<p class="p-0 m-0">احمد سعيد</p>
+																			<span class="text-muted">كشف</span>
+																		</div>
+																	</div>
+
+																	<div class="col-6 row">
+																		<i class="bi bi-clock-fill col-2"></i>
+																		<div class="col d-inline">
+																			<p class="p-0 m-0">الثاني</p>
+																			<span class="text-muted">45 دقيقة</span>
+																		</div>
+																	</div>
+
+																</div>
+
+																<div class="patient-info-row py-4 row">
+
+																	<div class="col-6 row">
+																		<i class="bi bi-person-circle col-2"></i>
+																		<div class="col d-inline">
+																			<p class="p-0 m-0">احمد سعيد</p>
+																			<span class="text-muted">كشف</span>
+																		</div>
+																	</div>
+
+																	<div class="col-6 row">
+																		<i class="bi bi-clock-fill col-2"></i>
+																		<div class="col d-inline">
+																			<p class="p-0 m-0">الثاني</p>
+																			<span class="text-muted">45 دقيقة</span>
+																		</div>
+																	</div>
+
+																</div>
+
+																<div class="patient-info-row py-4 row">
+
+																	<div class="col-6 row">
+																		<i class="bi bi-person-circle col-2"></i>
+																		<div class="col d-inline">
+																			<p class="p-0 m-0">احمد سعيد</p>
+																			<span class="text-muted">كشف</span>
+																		</div>
+																	</div>
+
+																	<div class="col-6 row">
+																		<i class="bi bi-clock-fill col-2"></i>
+																		<div class="col d-inline">
+																			<p class="p-0 m-0">الثاني</p>
+																			<span class="text-muted">45 دقيقة</span>
+																		</div>
+																	</div>
+
+																</div>
+								
+																
+															</div>
+															<input type="hidden" name="date-to-send">
+														</form>
+													</div>
+												</div>
+											</div>
+										</div>
+								<!-- /Add Event Modal -->
+								<!-- Add Event Modal -->
+									<div id="add_event5" class="modal custom-modal fade" role="dialog">
+										<div class="modal-dialog modal-dialog-centered" role="document">
+											<div class="modal-content">
+												<div class="modal-header">
+													<h4 class="modal-title">بيانات المريض</h4>
+													<button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+														<span aria-hidden="true">&times;</span>
+													</button>
+												</div>
+												<div class="modal-body p-5">
+													<div class="row justify-content-between">
+							
+														<div class="col-12 row pb-5">
+															<div class="col-6 my-1">
+																<i class="bi bi-calendar-date-fill"></i>
+																<p class="col selected-date d-inline mx-1">الثلاثاء , 23, اغسطس</p>
+															</div>
+															
+															<div class="col-6 my-1">
+																<i class="bi bi-clock-fill"></i>
+																<p class="col selected-date mx-1 d-inline" style="direction: ltr;"> 7 : PM </p>
+															</div>
+
+															<div class="col-6 my-1">
+																<i class="bi bi-person-fill"></i>
+																<p class="col selected-date d-inline mx-1">احمد سعيد</p>
+															</div>
+														</div>
+							
+														<div class="waiting-info text-center">
+															<div class="users-to-wait mb-5">
+																<h1 class="fw-bold">8</h1>
+																<p>الانتظار</p>
+															</div>
+															
+															<div class="current-user-number fw-bold mt-5">
+																<p>رقم الانتظار الخاص بك</p>
+																<h1 class="fw-bolder display-1	">9</h1>
+															</div>
+														</div>
+							
+														<input type="hidden" name="date-to-send">
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<!-- /Add Event Modal -->
+
+									<!-- Add Event Modal -->
+								<div id="add_event6" class="modal custom-modal fade" role="dialog">
+									<div class="modal-dialog modal-dialog-centered" role="document">
+										<div class="modal-content">
+											<div class="modal-body">	
+												<div class="modal-header">
+													<h4 class="modal-title">اضافة موعد</h4>
+													<button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+														<span aria-hidden="true">&times;</span>
+													</button>
+												</div>
+												<div class="modal-body text-center p-5">
+													<h4 class="fw-bold text-muted mb-5">
+														هل انت متأكد من دخول
+														<span class="text-dark">احمد سعيد</span>
+														للطبيب ؟
+													</h4>
+													<div>
+														<button class="text-white bg-dark p-3 px-5 border-0 rounded mx-3">نعم</button>
+														<button class="p-3 px-5 bg-white border border-dark rounded">لا</button>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- event -->
+
 		<!-- Add Event Modal -->
 		<div class="modal custom-modal fade none-border" id="my_event">
 			<div class="modal-dialog modal-dialog-centered">
@@ -495,6 +822,7 @@
 		<!-- /Add Category Modal -->
 	  
 		<!-- jQuery -->
+		
 		<script src="assets/js/jquery-3.6.0.min.js"></script>
 		
 		<!-- Bootstrap Core JS -->
@@ -510,11 +838,136 @@
 		
 		<!-- Full Calendar JS -->
         <script src="assets/plugins/jquery-ui/jquery-ui.min.js"></script>
-        <script src="assets/plugins/fullcalendar/fullcalendar.min.js"></script>
-        <script src="assets/plugins/fullcalendar/jquery.fullcalendar.js"></script>
+		
+        <!-- <script src="assets/plugins/fullcalendar/fullcalendar.min.js"></script> -->
+        <!-- <script src="assets/plugins/fullcalendar/jquery.fullcalendar.js"></script> -->
 		
 		<!-- Custom JS -->
 		<script src="assets/js/script.js"></script>
+
+		
+		<script>
+			document.addEventListener('DOMContentLoaded', function() {
+			  var calendarEl = document.getElementById('calendar');
+		
+
+			  var calendar = new FullCalendar.Calendar(calendarEl, {
+				select: function(start, end, jsEvent, view) {
+					$('#add_event').modal('toggle')
+
+					var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+					var date  = new Date(start.startStr);
+
+					$('#add_event .selected-date').text(date.toLocaleDateString("ar", options));
+
+					$('#add_event').on('hidden.bs.modal', function (e) {
+						$('#add_event2').modal('toggle')
+					})
+					// console.log(date.toLocaleDateString("en-US")); // 9/17/2016
+					// console.log(date.toLocaleDateString("ar", options)); // Saturday, September 17, 2016
+					// console.log(date.toLocaleDateString("hi-IN", options)); // शनिवार, 17 सितंबर 2016
+					// console.log(
+					// 	date.getMonth()
+					// );
+					// console.log(start);
+					// $('.datetimepicker').datetimepicker({});
+					// $('.datetimepicker').data("DateTimePicker").date(moment(new Date(start.startStr) ).format('DD/MM/YYYY HH:mm'));
+				},
+				locale: 'ar',
+				direction: 'rtl',
+				headerToolbar: {
+				  left: 'prev,next today',
+				  center: 'title',
+				  right: 'dayGridMonth,timeGridWeek,timeGridDay,listMonth'
+				},
+				buttonText: {
+				  // today: 'اليوم',
+				  // month: 'الشهر',
+				  // week: 'الاسبوع',
+				  // year: 'السنة',
+				  // day: 'يوم',
+				  // list: 'بتنجان'
+				},
+				initialDate: new Date(),
+				navLinks: true, // can click day/week names to navigate views
+				businessHours: true, // display business hours
+				editable: true,
+				selectable: true,
+				events: [
+				  {
+					title: 'Business Lunch',
+					start: 'T13:00:00',
+					constraint: 'businessHours'
+				  },
+				  {
+					title: 'Meeting',
+					start: '2020-09-13T11:00:00',
+					constraint: 'availableForMeeting', // defined below
+					color: '#257e4a'
+				  },
+				  {
+					title: 'Conference',
+					start: '2020-09-18',
+					end: '2020-09-20'
+				  },
+				  {
+					title: 'Party',
+					start: '2020-09-29T20:00:00'
+				  },
+		  
+				  // areas where "Meeting" must be dropped
+				  {
+					groupId: 'availableForMeeting',
+					start: '2020-09-11T10:00:00',
+					end: '2020-09-11T16:00:00',
+					display: 'background'
+				  },
+				  {
+					groupId: 'availableForMeeting',
+					start: '2020-09-13T10:00:00',
+					end: '2020-09-13T16:00:00',
+					display: 'background'
+				  },
+		  
+				  // red areas where no events can be dropped
+				  {
+					start: '2020-09-24',
+					end: '2020-09-28',
+					overlap: false,
+					display: 'background',
+					color: '#ff9f89'
+				  },
+				  {
+					start: '2020-09-06',
+					end: '2020-09-08',
+					overlap: false,
+					display: 'background',
+					color: '#ff9f89'
+				  }
+				]
+			  });
+		  
+			  calendar.render();
+			  $('#add_event6').modal('toggle');
+			});
+		
+		</script>
+		
+		<style>
+		
+			body {
+			  margin: 40px 10px;
+			  padding: 0;
+			  font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+			  font-size: 14px;
+			}
+		  
+			#calendar {
+			  max-width: 1100px;
+			  margin: 0 auto;
+			}
+		</style>
 		
 	</body>
+	
 </html>

@@ -135,8 +135,8 @@
             },
             {
                 title: 'Test Event 1',
-                start: today,
-                end: today,
+                start: '2022-09-03T13:00:00',
+                selectable: true,
                 className: 'bg-success'
             },
             {

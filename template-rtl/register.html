@@ -17,6 +17,11 @@
 		
 		<!-- Main CSS -->
 		<link rel="stylesheet" href="assets/css/style.css">
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet">
+
 	</head>
 	<body class="account-page">
 
@@ -200,43 +205,59 @@
 							<!-- Register Content -->
 							<div class="account-content">
 								<div class="row align-items-center justify-content-center">
-									<div class="col-md-7 col-lg-6 login-left">
+									<div class="col-md-7 col-lg-6 login-left order-1">
 										<img src="assets/img/login-banner.png" class="img-fluid" alt="Doccure Register">	
 									</div>
 									<div class="col-md-12 col-lg-6 login-right">
-										<div class="login-header">
-											<h3>Patient Register <a href="doctor-register.html">Are you a Doctor?</a></h3>
+										<div class="login-header mb-5">
+											<h1> انشاء حساب </h1>
+											<p class="text-muted">ادخل التفاصيل لانشاء حساب</p>
 										</div>
 										
 										<!-- Register Form -->
 										<form action="patient-email.html">
-											<div class="form-group form-focus">
-												<input type="text" class="form-control floating">
-												<label class="focus-label">Name</label>
-											</div>
-											<div class="form-group form-focus">
-												<input type="text" class="form-control floating">
-												<label class="focus-label">Mobile Number</label>
-											</div>
-											<div class="form-group form-focus">
-												<input type="email" class="form-control floating">
-												<label class="focus-label">Your Email Address</label>
-											</div>
-											<div class="text-end">
-												<a class="forgot-link" href="login.html">Already have an account?</a>
-											</div>
-											<button class="btn btn-primary w-100 btn-lg login-btn" type="submit">Signup</button>
-											<div class="login-or">
-												<span class="or-line"></span>
-												<span class="span-or">or</span>
-											</div>
-											<div class="row form-row social-login">
-												<div class="col-6">
-													<a href="#" class="btn btn-facebook w-100"><i class="fab fa-facebook-f me-1"></i> Login</a>
+											<div class="input-field">
+												<label class="">الاسم الكامل <span class="text-danger"> * </span> </label>
+												<div class="form-group form-focus border border-muted rounded h-25">
+													<i class="bi bi-person h4 position-absolute top-50 translate-middle"></i>
+													<input type="text" id="name" class="form-control floating border-0 w-75 floating" placeholder="الاسم الكامل">
 												</div>
-												<div class="col-6">
-													<a href="#" class="btn btn-google w-100"><i class="fab fa-google me-1"></i> Login</a>
+											</div>
+
+											<div class="input-field">
+												<label for="phone" class="">رقم الهاتف <span class="text-danger"> * </span> </label>
+												<div class="form-group form-focus border border-muted rounded h-25">
+													<i class="bi bi-phone h4 position-absolute top-50 translate-middle"></i>
+													<input type="text" id="phone" class="form-control floating border-0 w-75 floating" placeholder="رقم الهاتف">
 												</div>
+											</div>
+
+											<div class="input-field">
+												<label for="password" class="">كلمة السر <span class="text-danger"> * </span> </label>
+												<div class="form-group form-focus border border-muted rounded h-25">
+													<i class="spectate-password bi bi-eye-fill h4 position-absolute top-50 translate-middle"></i>
+													<input type="password" id="password" class="form-control floating border-0 w-75 floating" placeholder="كلمة السر">
+												</div>
+											</div>
+
+											<div class="input-field">
+												<label for="password-confirmation" class="">تأكيد كلمة السر <span class="text-danger"> * </span> </label>
+												<div class="form-group form-focus border border-muted rounded h-25">
+													<i class="spectate-password bi bi-eye-fill h4 position-absolute top-50 translate-middle"></i>
+													<input type="password" id="password-confirmation" class="form-control floating border-0 w-75 floating" placeholder="تأكيد كلمة السر">
+												</div>
+											</div>
+
+											<button class="btn btn-primary w-100 btn-lg login-btn mt-5" type="submit">
+												<h3 class="text-white"> تسجيل </h3>
+											</button>
+											<div class="text-start mb-5 text-center">
+												<div class="mt-2">
+													<span>هل لديك حساب بالفعل ؟</span>
+													<a class="forgot-link" href="login.html">تسجيل الدخول</a>
+												</div>
+												
+												<a class="forgot-link forgot-password" href="forgot-password.html"> نسيت كلمة المرور ؟ </a>
 											</div>
 										</form>
 										<!-- /Register Form -->
@@ -404,6 +425,5 @@
 		
 		<!-- Custom JS -->
 		<script src="assets/js/script.js"></script>
-		
 	</body>
 </html>

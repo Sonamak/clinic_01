@@ -1,0 +1,231 @@
+/*-----------------
+	12. Sidebar
+-----------------------*/
+
+.sidebar {
+	background-color: #fff; 
+	/* bottom: 0; */
+	right: 0;
+	margin-top: 0;
+	position: fixed;
+	transition: all 0.2s ease-in-out 0s;
+	width: 200px;
+	z-index: 1001;
+	box-shadow: 0px 4px 4px #EEF1FE;
+	overflow-y: hidden;
+}
+.sidebar.opened {
+	-webkit-transition: all 0.4s ease;
+	-moz-transition: all 0.4s ease;
+	transition: all 0.4s ease;
+}
+.sidebar-inner {
+	height: 100%;
+	min-height: 100%;
+	transition: all 0.2s ease-in-out 0s;
+} 
+.sidebar-menu ul {
+	font-size: 15px;
+	list-style-type: none;
+	margin: 0;
+	padding: 20px 0;
+	position: relative;
+}
+.sidebar-menu li a {
+	color: #131523;
+	display: block;
+	font-size: 14px;
+	height: auto;
+	padding: 0 20px;
+}
+.sidebar-menu li a:hover {
+	color: #0CE0FF;
+}
+.sidebar-menu > ul > li > a:hover {
+    color: #0CE0FF; 
+}
+.sidebar-menu li.active > a {
+    color: #0CE0FF;
+	position: relative;
+}
+.menu-title {
+	color: #7E84A3;
+	display: flex;
+    display: -ms-flexbox;
+	font-size: 14px;
+	font-weight: 600;
+	opacity: 1;
+	padding: 5px 15px;
+	white-space: nowrap;
+	position: relative;
+}
+.menu-title:before {
+    border-top: 1px solid #EEF1FE;
+    content: "";
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    right: 20px;
+    bottom: 0;
+    width: 83%;
+    z-index: -1;
+}
+.menu-title span {
+	background: #FFF;
+    padding-left: 10px;
+}
+.menu-title > i {
+	float: right;
+	line-height: 40px;
+}
+.sidebar-menu li.menu-title a {
+	color: #ff9b44;
+	display: inline-block;
+	margin-left: auto;
+	padding: 0;
+}
+.sidebar-menu li.menu-title a.btn {
+	color: #fff;
+	display: block;
+	float: none;
+	font-size: 15px;
+	margin-bottom: 15px;
+	padding: 10px 15px;
+}
+.sidebar-menu ul ul a.active {
+    color: #0CE0FF;
+}
+.mobile_btn {
+	display: none;
+	float: left;
+}
+.sidebar .sidebar-menu > ul > li > a span {
+	transition: all 0.2s ease-in-out 0s;
+	display: inline-block;
+	margin-right: 10px;
+	white-space: nowrap;
+}
+.sidebar .sidebar-menu > ul > li > a span.chat-user {
+	margin-left: 0;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.sidebar .sidebar-menu > ul > li > a span.badge {
+	margin-left: auto;
+}
+.sidebar-menu ul ul a {
+	display: block;
+	font-size: 13px;
+	padding: 7px 0px 7px 0px;
+    margin: 0 15px 0 40px;
+	border-bottom: 1px solid #F4F6FF;
+	position: relative;
+	color: #7E84A3;
+}
+.sidebar-menu ul ul {
+	display: none;
+	padding: 0;
+}
+.sidebar-menu ul ul ul a {
+	padding-left: 10px;
+}
+.sidebar-menu ul ul ul ul a {
+	padding-left: 10px;
+}
+.sidebar-menu > ul > li {
+	margin-bottom: 3px;
+	position: relative;
+}
+.sidebar-menu > ul > li:last-child {
+	margin-bottom: 25px;
+}
+.sidebar-menu .menu-arrow {
+	-webkit-transition: -webkit-transform 0.15s;
+	-o-transition: -o-transform 0.15s;
+	transition: transform .15s;
+	position: absolute;
+	left: 15px;
+	display: inline-block;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+	text-rendering: auto;
+	line-height: 40px;
+	font-size: 16px;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-transform: translate(0, 0);
+	-transform: translate(0, 0);
+	-o-transform: translate(0, 0);
+	transform: translate(0, 0);
+	line-height: 18px;
+	top: 11px;
+}
+.sidebar-menu .menu-arrow:before {
+	content: "\f104";
+}
+.sidebar-menu li a.subdrop .menu-arrow {
+	-transform: rotate(-90deg);
+	-webkit-transform: rotate(-90deg);
+	-o-transform: rotate(-90deg);
+	transform: rotate(-90deg);
+}
+.sidebar-menu ul ul a .menu-arrow {
+	top: 10px;
+	right: 0;
+}
+.sidebar-menu > ul > li > a {
+	align-items: center; 
+	display: flex;
+    display: -ms-flexbox;
+	justify-content: flex-start;
+	padding: 8px 15px;
+	position: relative;
+	transition: all 0.2s ease-in-out 0s;
+}
+.sidebar-menu > ul > li > a svg {
+    width: 18px;
+}
+.sidebar-menu ul li a i {
+	display: inline-block;
+	font-size: 16px;
+	line-height: 24px;
+	text-align: left;
+	vertical-align: middle;
+	width: 20px;
+	transition: all 0.2s ease-in-out 0s;
+}
+.sidebar-menu ul li.menu-title a i {
+	font-size: 16px !important;
+	margin-right: 0;
+	text-align: right;
+	width: auto;
+}
+.sidebar-menu li a > .badge {
+	color: #fff;
+}
+.event-form .input-group .form-control {
+	height: 40px;
+}
+.submit-section {
+	text-align: center;
+	margin-top: 40px;
+}
+.submit-btn {
+    border-radius: 50px;
+    font-size: 18px;
+    font-weight: 600;
+    min-width: 200px;
+    padding: 10px 20px;
+}
+.dropdown-action {
+	margin-bottom: 5px;
+}
+.dropdown-action .dropdown-toggle:after {
+	display: none;
+}
+.action-icon {
+    color: #333;
+    font-size: 18px;
+    display: inline-block;
+}
